@@ -33,7 +33,7 @@ define openvpn::client_specific_config (
   Array[String]  $dhcp_options       = [],
   Boolean $redirect_gateway          = false,
   Boolean $manage_client_configs     = true,
-  Boolean $push_reset                = false,
+  Array[String] $push_remove         = [],
 ) {
 
   if $manage_client_configs {

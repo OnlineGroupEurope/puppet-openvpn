@@ -1,5 +1,5 @@
-<% if @push_reset -%>
-push-reset
+<% @push_remove.each do |push_remove| -%>
+push-remove "<%= push_remove %>"
 <% end -%>
 <% @iroute.each do |iroute| -%>
 iroute <%= iroute %>
